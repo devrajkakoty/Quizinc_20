@@ -1310,7 +1310,8 @@ section,
     margin-bottom: 50px;
 }
 span.featured-icon i,
-span.multi-featured-icon i {
+span.multi-featured-icon i,
+span.multi-featured-icon img {
     color: rgba(255, 255, 255, 0.8);
     font-size: 28px;
     display: block;
@@ -1352,7 +1353,7 @@ ul.main-feature li.featured-section:nth-of-type(3n+3) {
     line-height: 22px;
 }
 .featured-section a:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color:#f16c20;/* rgba(0, 0, 0, 0.6);*/
 }
 .main-button button.customize-partial-edit-shortcut-button {
     padding: 0px;
@@ -1976,8 +1977,8 @@ ul.multiple-testimonial-section li.multi-testimonial,
 #owl-demo .item img {
     display: block;
     width: 100%;
-    height: 320px;
-    max-height: 350px;
+    height: auto;
+    max-height: 400px;
 }
 .owl-prev {
     position: absolute;
@@ -2032,7 +2033,7 @@ ul.multiple-testimonial-section li.multi-testimonial,
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.79) 100%);
     line-height: 40px;
     color: #fff;
-    text-transform: capitalize;
+    text-transform: initial;
 }
 .owl-item a {
     height: 250px;
@@ -3468,7 +3469,7 @@ section.woo-wrapper {
     background: #fff;
     padding-top: 50px;
     padding-bottom: 50px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.8);
     text-align: center;
 }
 .summary h1.product_title {
@@ -5160,7 +5161,12 @@ background:#f16c20;
 }
 }
 /*end*/
-
+@media (max-width: 550px) {
+  iframe {
+      height: 440px;
+      width: 100%;
+  }
+}
 @media (max-width: 550px) {
     .footer .footer-widget-column .widget,
     .footer .footer-widget-column.footer-widget-4column-active .widget {
@@ -5171,9 +5177,6 @@ background:#f16c20;
     .footer .footer-widget-column .widget:nth-child(2n+1){
      margin-right:0;
 
-    }
-    iframe {
-        height: 100%!important;
     }
     .featured-section {
         width: 100%;
