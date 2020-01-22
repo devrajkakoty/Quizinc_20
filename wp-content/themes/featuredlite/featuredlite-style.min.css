@@ -1978,7 +1978,7 @@ ul.multiple-testimonial-section li.multi-testimonial,
     display: block;
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 350px;
 }
 .owl-prev {
     position: absolute;
@@ -3702,7 +3702,7 @@ position: relative;
     position: absolute;
     right: 25%;
     left: 25%;
-    bottom: 50%;
+    bottom: 55%;
     display: none;
     border-radius: 0;
     color: #1abc9c;
